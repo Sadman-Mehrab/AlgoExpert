@@ -24,6 +24,7 @@ vector <int> sortedSquaredArray(vector<int> arr){
             l++;
         }
     }
+    newArr.insert(newArr.begin(),arr[l]*arr[l]);
     return newArr;
 }
 
@@ -31,7 +32,7 @@ vector <int> sortedSquaredArray(vector<int> arr){
 int main(){
 
     HibanaUwU
-    vector<int> arr = {-11,-7,-2,1,5,6,8,9,10};
+    vector<int> arr = {-11,-7,-2,3,5,6,8,9,10};
     for(int x: arr) cout<<x<<" "; cout<<"\n";
 
     vector<int> arrSquared = sortedSquaredArray(arr);
