@@ -21,11 +21,10 @@ vector <int> sortedSquaredArray(vector<int> arr){
             newArr[i] = arr[r]*arr[r];
             r--;
         }
-        else if( abs(arr[l]) > abs(arr[r]) ) {
+        else {
             newArr[i] = arr[l]*arr[l];
             l++;
         }
-        else newArr[i] = arr[l]*arr[l];
         i--;
     }
     return newArr;
